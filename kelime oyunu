@@ -1,6 +1,6 @@
 import random
 
-text=["asker","esnaf","araba","meyve","etsiz","sevgi","saygı","elmas",
+text=["esnaf","araba","meyve","etsiz","sevgi","saygı","elmas",
       "selma","sakar","hakem","armut","selam","tarık","makas","şarkı",
       "hedef","hatay","sakız","sinop","kiraz,","tepsi","hasan","aydın"]
 result=random.choice(text)
