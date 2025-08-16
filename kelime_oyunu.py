@@ -1,0 +1,44 @@
+import random
+
+text=["esnaf","araba","meyve","etsiz","sevgi","saygı","elmas",
+      "selma","sakar","hakem","armut","selam","tarık","makas","şarkı",
+      "hedef","hatay","sakız","sinop","kiraz,","tepsi","hasan","aydın"]
+
+result=random.choice(text)
+
+
+i=0
+while i<3:
+    kelime_tahmini=str(input("Tahmin ettiğiniz beş harfli kelimeyi giriniz: "))
+    if kelime_tahmini[0]==result[0] and kelime_tahmini[1]==result[1] and kelime_tahmini[2]==result[2] and kelime_tahmini[3]==result[3] and kelime_tahmini[4]==result[4]:
+            print("Tebrikler! Tüm harfleri doğru girdiniz.")
+            break
+    if kelime_tahmini[0]!=result[0] and kelime_tahmini[1]!=result[1] and kelime_tahmini[2]!=result[2] and kelime_tahmini[3]!=result[3] and kelime_tahmini[4]!=result[4]:
+            print("Hiçbir harf doğru değil. Tekrar deneyiniz.")
+            while i==2:
+              print(f"Oyun haklarınız tükendi.Doğru kelimemiz: {result}")
+              break
+    else:
+        if kelime_tahmini[0]==result[0]:
+            print("ilk harfi doğru girdiniz")
+
+        if kelime_tahmini[1]==result[1]:
+            print("ikinci harfi doğru girdiniz")
+
+        if kelime_tahmini[2]==result[2]:
+            print("üçüncü harfi doğru girdiniz")
+
+        if kelime_tahmini[3]==result[3]:
+            print("dödüncü harfi doğru girdiniz")
+
+        if kelime_tahmini[4]==result[4]:
+            print("beşinci harfi harfi doğru girdiniz")
+        while i==2:
+          print(f"Oyun haklarınız tükendi.Doğru kelimemiz: {result}")
+          break
+    i+=1
+
+
+
+
+
